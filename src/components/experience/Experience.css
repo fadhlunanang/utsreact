@@ -1,0 +1,118 @@
+#experience {
+    padding-top: 3rem;
+    margin-top: 200px;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.experience-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    
+}
+
+.experience-head {
+    border-radius: 0 0 2rem 2rem;
+    margin: -3rem -5rem 2rem -5rem;
+    background: var(--color-blue2);
+    padding: 1.5rem;
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+
+}
+
+.experience-head h3 {
+    color: var(--color-bg);
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.experience-container > div {
+    background: var(--color-black);
+    padding: 2.4rem 5rem;
+    border-radius: 0 0 2rem 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.experience-container > div:hover {
+    background: transparent;
+    border: 1px solid var(--color-white2);
+    cursor: default;
+}
+
+
+.experience-container > div:hover .experience-details-icon {
+    color: var(--color-blue2);
+}
+
+.experience-container > div h3 {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.experience-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.experience-details {
+    display: flex;
+    gap: 1rem;
+}
+
+.experience-details-icon {
+    margin-top: 1rem;
+    color: var(--color-blue2)
+}
+
+.experience-details-text {
+    color: var(--color-white2);
+}
+
+/* ===================== MEDIA QUERIS (MEDIUM) ================ */
+
+@media screen and (max-width: 1024px) {
+    .experience-container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-head {
+        margin: -2rem -2rem 2rem -2rem;
+    }
+
+    .experience-container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+}
+
+/* ===================== MEDIA QUERIS (SMALL) ================ */
+
+@media screen and (max-width: 600px) {
+    .experience-container {
+        gap: 1rem;
+    }
+
+    .experience-head {
+        margin: -2rem -1rem 2rem -1rem;
+    }
+
+    .experience-container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+        margin: 0 auto;
+    }
+
+}
